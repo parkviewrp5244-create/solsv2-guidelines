@@ -1,6 +1,6 @@
 /* ===== Colors (change these to re-theme the whole site) ===== */
 :root {
-  --glass: rgba(12, 10, 22, 0.72);
+  --glass: rgba(12, 10, 22, 0.6);
   --glass-2: rgba(255, 255, 255, 0.05);
   --border: rgba(255, 255, 255, 0.12);
   --text: #f2f0f7;
@@ -72,7 +72,7 @@ code {
 
 /* ===== Layout ===== */
 .page {
-  max-width: 860px;
+  max-width: 700px;
   margin: 0 auto;
   padding: 24px 16px 40px;
   display: flex;
@@ -218,10 +218,13 @@ code {
 }
 .byline span { font-size: 0.85rem; color: var(--muted); }
 .signature {
-  margin: 0;
-  font-family: "Mrs Saint Delafield", cursive;
-  font-size: 2.2rem;
-  line-height: 1.1;
+  margin: 2px 0 0;
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: #fff;
+  text-shadow: 0 0 14px rgba(255, 204, 46, 0.35);
 }
 .intro { margin: 18px 0 8px; }
 .intro.small { text-align: center; color: var(--muted); font-size: 0.9rem; }
@@ -312,6 +315,16 @@ code {
 }
 .class-card h3 { margin: 8px 0 2px; font-family: "Unbounded", sans-serif; font-size: 1rem; }
 .class-card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+
+/* ===== Rules "zoomed out": smaller text so more background shows ===== */
+#rules { padding: 26px; font-size: 0.9rem; }
+#rules .rules-title { font-size: clamp(1.3rem, 4vw, 2rem); }
+#rules .section-title { font-size: clamp(1rem, 2.6vw, 1.3rem); }
+#rules .rules li { padding-top: 9px; padding-bottom: 9px; }
+#rules .rules.numbered li::before { top: 9px; }
+#rules .rules li::before { top: 1.25em; }
+#rules .pill { font-size: 0.78rem; padding: 6px 12px; }
+#rules .rule-group { margin-top: 24px; }
 
 /* ===== Footer ===== */
 .footer {
