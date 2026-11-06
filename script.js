@@ -1,7 +1,7 @@
 /* =====================================================
    EDIT THESE TWO LINES WITH YOUR REAL LINKS
    ===================================================== */
-const DISCORD_INVITE = "https://discord.gg/YOURCODE";
+const DISCORD_INVITE = "https://discord.gg/phbHecqfM4";
 const CFX_CODE = "xxxxxx";   // the part after cfx.re/join/  (from txAdmin or the FiveM server list)
 
 /* ---------- no need to edit below ---------- */
@@ -13,11 +13,11 @@ document.querySelectorAll('[data-link="discord"]').forEach(a => {
   a.rel = "noopener";
 });
 document.querySelectorAll('[data-link="connect"]').forEach(a => {
+  if (CFX_CODE === "xxxxxx") { a.remove(); return; }   // hide the button until a code is set
   a.href = connectUrl;
   a.target = "_blank";
   a.rel = "noopener";
 });
-document.getElementById("connect-cmd").textContent = "connect cfx.re/join/" + CFX_CODE;
 document.getElementById("year").textContent = new Date().getFullYear();
 
 // Live player count (hidden if the server is offline or the code isn't set yet)
