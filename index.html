@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SOLS | Stories of Los Santos</title>
+  <meta name="description" content="Stories of Los Santos (SOLS) is a FiveM roleplay server. Read the rules, join the Discord and connect.">
+  <meta property="og:title" content="SOLS | Stories of Los Santos">
+  <meta property="og:description" content="FiveM roleplay server. Rules, Discord and how to join.">
+  <meta property="og:image" content="assets/banner.jpg">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;900&family=Inter:wght@400;500;600&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <!-- ============ TOP BAR ============ -->
+  <header class="topbar">
+    <a href="#top" class="topbar-logo"><img src="assets/logo.png" alt="SOLS"></a>
+    <nav class="topbar-nav">
+      <a href="#about">About</a>
+      <a href="#join">How to Join</a>
+      <a href="#rules">Rules</a>
+      <a href="#" data-link="discord" class="btn btn-small">Discord</a>
+    </nav>
+  </header>
+
+  <main class="page" id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <h1 class="title">STORIES OF LOS SANTOS</h1>
+      <p class="tagline">Every block has a story. Write yours.</p>
+
+      <div class="lights" aria-hidden="true"></div>
+
+      <div class="hero-actions">
+        <a href="#" data-link="connect" class="btn btn-primary">Connect to Server</a>
+        <a href="#" data-link="discord" class="btn">Join the Discord</a>
+      </div>
+      <p class="status" id="status" hidden></p>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="card" id="about">
+      <h2 class="section-title">ABOUT</h2>
+      <p>
+        <!-- EDIT ME: write a few lines about your server -->
+        SOLS is a serious-but-fun FiveM roleplay community set in the streets of Los Santos.
+        Build your character, run with your crew, open a business or keep the city safe:
+        the story is up to you.
+      </p>
+      <div class="features">
+        <div class="feature"><span class="dot red"></span><h3>Custom Scripts</h3><p>Jobs, businesses and systems built for real roleplay.</p></div>
+        <div class="feature"><span class="dot green"></span><h3>Custom MLOs</h3><p>Unique interiors and hangouts all over the city.</p></div>
+        <div class="feature"><span class="dot yellow"></span><h3>Active Staff</h3><p>A team that answers tickets and keeps RP fair.</p></div>
+        <div class="feature"><span class="dot blue"></span><h3>Gangs &amp; Crews</h3><p>Turf, beef and stories that carry week to week.</p></div>
+      </div>
+    </section>
+
+    <!-- ============ HOW TO JOIN ============ -->
+    <section class="card" id="join">
+      <h2 class="section-title">HOW TO JOIN</h2>
+      <ol class="steps">
+        <li><span>1</span><div><h3>Get FiveM</h3><p>Download and install FiveM from <a href="https://fivem.net" target="_blank" rel="noopener">fivem.net</a>. You need a legal copy of GTA V.</p></div></li>
+        <li><span>2</span><div><h3>Join the Discord</h3><p>Our Discord has announcements, tickets and support. <a href="#" data-link="discord">Join here</a>.</p></div></li>
+        <li><span>3</span><div><h3>Read the Rules</h3><p>Everything below. "I didn't know" won't be accepted.</p></div></li>
+        <li><span>4</span><div><h3>Connect</h3><p>Hit <a href="#" data-link="connect">Connect</a>, or press F8 in FiveM and type <code id="connect-cmd">connect cfx.re/join/xxxxxx</code></p></div></li>
+      </ol>
+    </section>
+
+    <!-- ============ RULES ============ -->
+    <section class="card" id="rules">
+      <h1 class="title rules-title">SOLS - RULES // GUIDELINES</h1>
+
+      <div class="byline">
+        <span>By</span>
+        <!-- EDIT ME: your name / staff names -->
+        <p class="signature">Sols Staff Team</p>
+      </div>
+
+      <p class="intro">
+        These rules exist to protect everyone's roleplay experience and keep the server enjoyable,
+        realistic and safe for the whole community. Read them fully. "I didn't know" won't be accepted.
+      </p>
+
+      <!-- Quick-jump buttons -->
+      <nav class="toc">
+        <a href="#conduct">Conduct</a>
+        <a href="#interactions">Interactions</a>
+        <a href="#r0">0. Admin Discretion</a>
+        <a href="#r1">1. Common Courtesy</a>
+        <a href="#r2">2. Metagaming</a>
+        <a href="#r3">3. Powergaming</a>
+        <a href="#r4">4. Deathmatching</a>
+        <a href="#r5">5. Robbing &amp; Scamming</a>
+        <a href="#r6">6. NLR</a>
+        <a href="#r7">7. Game Physics</a>
+        <a href="#r8">8. Mods</a>
+        <a href="#r9">9. Safezones</a>
+        <a href="#r10">10. NVL</a>
+        <a href="#r11">11. Illegal Activities</a>
+        <a href="#r12">12. Multiple Characters</a>
+        <a href="#r13">13. Corruption</a>
+        <a href="#r14">14. Refunds</a>
+        <a href="#r15">15. Real World Trading</a>
+        <a href="#r16">16. Vehicle Prices</a>
+        <a href="#r17">17. Obscene RP</a>
+        <a href="#punishments">Punishments</a>
+      </nav>
+
+      <!--
+        HOW TO EDIT RULES
+        - Each category is a <div class="rule-group">.
+        - Each rule is one <li>...</li>. Copy a line to add a rule, delete a line to remove one.
+        - The grey box next to a heading is the consequence ("pill").
+      -->
+
+      <!-- ===== CONDUCT ===== -->
+      <div class="rule-group" id="conduct">
+        <div class="rule-head">
+          <h2 class="section-title">CONDUCT</h2>
+          <span class="pill">Consequences: Any Class Depending on the Situation, or Removal from the Community.</span>
+        </div>
+        <ul class="rules">
+          <li>Your character needs to have a somewhat realistic name with a correct pronunciation, and must not break TOS.</li>
+          <li>Players must follow <a href="https://www.twitch.tv/p/legal/terms-of-service/" target="_blank" rel="noopener">Twitch.tv Terms of Service (TOS)</a> at all times.</li>
+          <li>Engaging in toxic behavior on any platform, including Twitch, Reddit, Discord, etc., may result in removal from the community at any time.</li>
+          <li>Discussing real-life deceased individuals is strictly prohibited, and violators of this rule will be appropriately addressed.</li>
+          <li>We uphold a stringent code of conduct within our community, addressing distasteful actions such as harassment, sexual harassment, excessive name-calling, shaming and targeted personal attacks. Violations may result in a permanent ban.</li>
+          <li>You're not allowed to leak information of anybody, or involve yourself in provocative activities.</li>
+          <li>You're not allowed to intimidate players from playing on the server or continuously harass them in-game for out-of-character reasons.</li>
+          <li>Respect one another and have justification and reasoning for your actions. Simply saying "it's my character" will not be considered a valid response.</li>
+        </ul>
+      </div>
+
+      <!-- ===== INTERACTIONS ===== -->
+      <div class="rule-group" id="interactions">
+        <div class="rule-head">
+          <h2 class="section-title">INTERACTIONS</h2>
+          <span class="pill">Consequences: Class C or D Depending on the Situation</span>
+        </div>
+        <ol class="rules numbered">
+          <li>Sexual, torture, or extremely gross roleplay is allowed only if all parties involved (participants and witnesses) have agreed to it in an out-of-character chat before the roleplay is performed, and not in a public area. If at any time you feel uncomfortable with the roleplay, you can void it and leave. Spiking drinks should not be roleplayed in any instance.</li>
+          <li>Scenarios such as rape and non-consensual touching are prohibited.</li>
+          <li>Players breaking the rules doesn't mean the roleplay stops. If you have an issue with a player, submit a report in-game or on the forums.</li>
+          <li>Trying to meet someone via stream sniping isn't allowed. If you're found to be stream sniping, you will be permanently banned and unwhitelisted from the server.</li>
+          <li>Players may take pictures with their phone using the emote. They may record using a camera. The camera may pick up audio if the player is in range to hear it (not through walls, glass, etc.).</li>
+          <li>All players must follow the <a href="https://www.twitch.tv/p/legal/terms-of-service/" target="_blank" rel="noopener">Twitch Terms of Service</a>.</li>
+          <li>All players must remain in character unless an administrator says otherwise. If you need to go OOC, use your local OOC chat, only if needed.</li>
+          <li>Players may not void roleplay or any scenario unless a Game Admin or Lead Admin says otherwise as the result of a report. A scene may not be voided without first going to the forums. You must follow all administrator instructions.</li>
+          <li>Players may not cut off interactions between themselves or another player unless Lead Admin+ says otherwise. You must follow all administrator instructions.</li>
+          <li>Reports must remain professional from all parties involved, both forum reports and in-game reports. Never argue under reports or take part in unnecessary toxicity. A report should be submitted on the forums within 3 days of the situation happening.</li>
+        </ol>
+      </div>
+
+      <!-- ===== IN-GAME RULES ===== -->
+      <div class="divider-title">
+        <div class="lights" aria-hidden="true"></div>
+        <h2 class="title">IN-GAME RULES</h2>
+      </div>
+
+      <div class="rule-group" id="r0">
+        <div class="rule-head">
+          <h2 class="section-title">0. ADMIN DISCRETION</h2>
+          <span class="pill">Consequences: Class B or Class C</span>
+        </div>
+        <p class="rule-desc">When a player's actions or general conduct negatively impact another player's roleplay experience and/or undermine the realistic roleplay atmosphere we strive to create, admins have the authority to punish that player for violations not covered by the guidelines below. Admins can also punish players for scenes where terrible roleplay is shown without needing a forum report, only if the situation matches this.</p>
+      </div>
+
+      <div class="rule-group" id="r1">
+        <div class="rule-head">
+          <h2 class="section-title">1. COMMON COURTESY</h2>
+          <span class="pill">Consequences: Any Class Depending on the Situation</span>
+        </div>
+        <p class="rule-desc">All participants are expected to treat each other with respect. Violating rules because of someone else's actions is not permissible. Disrupting, stalling or voiding roleplay is prohibited unless directed by an administrator. Examples include:</p>
+        <ul class="rules">
+          <li>Exiting the game to evade roleplay (combat logging) results in an automatic 10-day ban.</li>
+          <li>Repeatedly refusing or avoiding roleplay is not allowed.</li>
+          <li>Bugs and desync issues should be roleplayed out.</li>
+          <li>Asset transfers require approval from the Administration.</li>
+          <li>Homophobia, misgendering and targeted hateful remarks are strictly prohibited.</li>
+          <li>Insulting another player through out-of-character channels (Forums, Discord, etc.) is unacceptable.</li>
+          <li>Disregarding an administrator's decision or ignoring their messages is against the rules.</li>
+          <li>Failing to roleplay a car crash, unless caused by desync and voided by an administrator, is a violation.</li>
+          <li>Purposefully being away from the keyboard to avoid roleplay is not allowed.</li>
+          <li>Properties must be sold at realistic prices. Adding excessive amounts without justification is prohibited.</li>
+        </ul>
+        <ul class="rules">
+          <li>If you encounter a bug or exploit on any of our services, you must report it. Exploiting it will result in a permanent ban. Players are also responsible for reporting others who break the rules.</li>
+          <li>Trying to buy or sell weapons/drugs through the in-game "Yellow Pages" app is poor roleplay and will result in punishment.</li>
+        </ul>
+      </div>
+
+      <div class="rule-group" id="r2">
+        <div class="rule-head">
+          <h2 class="section-title">2. METAGAMING</h2>
+          <span class="pill">Consequences: Class C</span>
+        </div>
+        <p class="rule-desc">Metagaming is using out-of-character information in-game. Encouraging others to metagame is also a violation of this rule. Using external communication platforms such as Discord or Skype to pass in-character information while in-game is strictly prohibited. Examples include:</p>
+        <ul class="rules">
+          <li>John Doe uses information from out-of-character chat in his in-character roleplay.</li>
+          <li>Jane Smith uses details from Twitch chat to inform her in-character actions.</li>
+        </ul>
+      </div>
+
+      <div class="rule-group" id="r3">
+        <div class="rule-head">
+          <h2 class="section-title">3. POWERGAMING</h2>
+          <span class="pill">Consequences: Class B</span>
+        </div>
+        <p class="rule-desc">Powergaming is performing acts that aren't humanly possible, forcing roleplay on others without giving them a fair chance, making up things that didn't happen so you benefit, or roleplaying things that aren't possible script-wise to gain an unfair advantage. Examples:</p>
+        <ul class="rules">
+          <li>Talking, organizing or calling out locations while downed.</li>
+          <li>Finding the quickest way to make money rather than roleplaying around the mechanic.</li>
+          <li>Not using /me and /do. These should be used as much as possible to help your scenarios.</li>
+          <li>Driving at unrealistic speeds over and over with no character reason.</li>
+          <li>Purposely stomping someone to death by playing around the health bar.</li>
+        </ul>
+      </div>
+
+      <div class="rule-group" id="r4">
+        <div class="rule-head">
+          <h2 class="section-title">4. DEATHMATCHING</h2>
+          <span class="pill">Consequences: Class C</span>
+        </div>
+        <p class="rule-desc">Killing another person without a sufficient roleplay reason (deathmatching) is not allowed. Unnecessary provoking falls under this rule as well. Terrorism is strictly forbidden.</p>
+        <p class="rule-desc"><strong>Vehicle Deathmatching (VDM)</strong> is purposely using your vehicle to harm or kill another player. Not every time you're hit by a vehicle is VDM, but if it matches this description the rule was broken.</p>
+        <p class="rule-desc">This also includes <strong>revenge killing</strong>: respawning after being executed and then killing (or attempting to kill) the person who just murdered you. Your in-character memory of everything leading up to your death is wiped, so you should forget about your attacker. Examples:</p>
+        <ul class="rules">
+          <li>Attacking another player or group without any story/roleplay leading up to it.</li>
+          <li>Attacking another player or group with a vehicle, intending to kill or knock them out, without valid reasoning or initiation.</li>
+          <li>John Doe killed you for a legitimate in-character reason. You respawn without being saved by PD/FD, get a gun from your house, go back and kill him.</li>
+          <li>You provoke a fist fight with two unarmed people, then pull a firearm and kill them.</li>
+          <li>Provoking a situation or another player without valid reasons.</li>
+          <li>Using a legally obtained firearms license to harm civilians results in immediate revocation of that license. We urge all license holders to use their weapons responsibly and lawfully.</li>
+        </ul>
+      </div>
+
+      <div class="rule-group" id="r5">
+        <div class="rule-head">
+          <h2 class="section-title">5. ROBBING &amp; SCAMMING</h2>
+          <span class="pill">Consequences: Class A or B Depending on the Situation</span>
+        </div>
+        <p class="rule-desc"><strong>Robbing</strong> is taking someone's possessions (money, items, etc.) by force or threat of force. <strong>Scamming</strong> is offering a good or service and then refusing to pay or give it. Robberies and scams must be done strictly in character.</p>
+        <ul class="rules">
+          <li>You can't force other players to withdraw money from an ATM.</li>
+          <li>You must always have a valid reason for robbing someone.</li>
+          <li>You can't force another player to sell you their vehicle via script commands during a robbery.</li>
+          <li>You can't force other players to hand over assets that aren't present in the area.</li>
+          <li>You may not scam vehicles or properties.</li>
+          <li>Scams are capped at a maximum of $30,000.</li>
+          <li>You may not rob items from the Police Department or Fire Department.</li>
+          <li>You can't commit a robbery while driving a luxury, high-end or sports car.</li>
+          <li>Players can rob all the cash you carry on you. Don't walk around with $20,000 unless you don't mind losing it.</li>
+          <li>Looting dead players is forbidden.</li>
+          <li>A group shouldn't split up and hit houses in 4 different areas of the map just to spread police out.</li>
+          <li>You may not rob a player while they're doing a scripted job (e.g. garbage pickup).</li>
+          <li>Only tell a player "put your hands up" or "don't move" if you intend to rob them, not if you intend to kill them.</li>
+          <li>You may not rob or scam a player inside a greenzone.</li>
+          <li>Chain robberies, unless perfectly roleplayed, are unrealistic and a poor portrayal of a character. You may do <strong>one robbery per hour</strong>. This counts for your whole group, whether you're the getaway driver or the burglar.</li>
+          <li>You may not kill someone during a robbery unless they bring it upon themselves. Players must value their lives; your character's life is important.</li>
+        </ul>
+      </div>
+
+      <div class="rule-group" id="r6">
+        <div class="rule-head">
+          <h2 class="section-title">6. NEW LIFE RULE (NLR)</h2>
+          <span class="pill">Consequences: Class B</span>
+        </div>
+        <p class="rule-desc">If you're downed and respawn at the hospital, your character forgets the immediate events leading up to being downed in the current scenario. You may not return to the area of your death for at least <strong>15 minutes</strong> or try to retrieve lost possessions from the players involved. If you're Character Killed, you may not make a new character to revenge kill for your deceased one.</p>
+        <ul class="rules">
+          <li>You may not respawn if you've been told police or EMS are on the way to your scene.</li>
+          <li>You must try to contact medical help of some sort while incapacitated.</li>
+        </ul>
+      </div>
+
+      <div class="rule-group" id="r7">
+        <div class="rule-head">
+          <h2 class="section-title">7. ABUSE OF GAME PHYSICS</h2>
+          <span class="pill">Consequences: Class A</span>
+        </div>
+        <p class="rule-desc">GTA V physics and movement are hardcoded and can't be changed with scripts, so the following is forbidden to avoid non-roleplay situations:</p>
+        <ul class="rules">
+          <li><strong>Bunnyhopping:</strong> jumping while running to gain speed in a situation.</li>
+          <li><strong>Spam punching:</strong> spam clicking in a fight and not giving someone a chance to react.</li>
+          <li><strong>Combat rolling:</strong> rolling in a shootout, etc.</li>
+          <li><strong>Olympic swimming:</strong> swimming without roleplaying any exhaustion.</li>
+          <li><strong>Abuse of jobs:</strong> e.g. spawning a job vehicle to evade police.</li>
+        </ul>
+      </div>
+
+      <div class="rule-group" id="r8">
+        <div class="rule-head">
+          <h2 class="section-title">8. THIRD PARTY MODIFICATIONS</h2>
+          <span class="pill">Consequences: Class D</span>
+        </div>
+        <p class="rule-desc">Any game modification or software that gives a player any advantage over another player is forbidden. Client-side mods may only be used for looks and must never change how anything works in-game. This includes mods, trainers, crosshairs, tracers, unlimited stamina, etc.</p>
+      </div>
+
+      <div class="rule-group" id="r9">
+        <div class="rule-head">
+          <h2 class="section-title">9. SAFEZONES</h2>
+          <span class="pill">Consequences: Class B</span>
+        </div>
+        <p class="rule-desc">A safezone (no-crime zone) is an area where players may not commit any crimes. If the player you're attacking flees into a safezone, the roleplay is allowed to continue.</p>
+        <ol class="rules numbered">
+          <li>Spawn locations.</li>
+          <li>City Hall, any government offices, law enforcement offices, hospitals, car dealerships, banks, the DMV and the Country Club.</li>
+          <li>Shopping center / mall (inside only).</li>
+          <li>Parking garages and impound lots.</li>
+          <li>Inside clothing stores, tattoo shops and barber shops.</li>
+          <li>Player-owned businesses. The sidewalks and parking lots connected to them are also green zones, only while the business is open.</li>
+          <li>Server events, excluding block parties and house parties.</li>
+          <li>Movie theatres, the Arena, bowling alleys, LA Fitness (inside only).</li>
+          <li>The Diamond Casino, parking lot included.</li>
+          <li>Dave &amp; Buster's.</li>
+        </ol>
+      </div>
+
+      <div class="rule-group" id="r10">
+        <div class="rule-head">
+          <h2 class="section-title">10. NOT VALUING LIFE (NVL)</h2>
+          <span class="pill">Consequences: Class B</span>
+        </div>
+        <p class="rule-desc">All players must value their character's life:</p>
+        <ul class="rules">
+          <li>Treat your character as you would treat yourself. Be mindful of your character's life at all times.</li>
+          <li>If you're held at gunpoint, do whatever you're instructed to.</li>
+          <li>If someone has a hostage, you must value the hostage's life and want them safe.</li>
+          <li>Fake hostages aren't allowed. You can't get people to sign up as hostages for your store robberies.</li>
+        </ul>
+        <p class="rule-desc">Examples of when you're <strong>not</strong> in direct danger:</p>
+        <ul class="rules">
+          <li>You're in a vehicle and the engine isn't stalled.</li>
+          <li>You have a firearm drawn and facing the other person before they attack.</li>
+          <li>The attacker's view is blocked by an object, or they turn their back on you.</li>
+        </ul>
+      </div>
+
+      <div class="rule-group" id="r11">
+        <div class="rule-head">
+          <h2 class="section-title">11. ILLEGAL ACTIVITIES</h2>
+          <span class="pill">Consequences: Class B</span>
+        </div>
+        <p class="rule-desc">Criminal activities are limited to <strong>4 players max</strong> at a time.</p>
+        <ul class="rules">
+          <li>Relaying information to or between characters (lookouts, radio comms) counts you as part of that scenario.</li>
+          <li>Choosing shooters/grinders over roleplayers is not acceptable.</li>
+          <li>When characters are taken into police custody and a second group of four forms to attempt a prison or transport break, that group can't intervene until the prison transport begins. Doing it with small weapons or a poorly thought-out plan is also NVL.</li>
+          <li>Shooting dice: max bet of <strong>$20,000 per roll</strong>, cash only.</li>
+        </ul>
+      </div>
+
+      <div class="rule-group" id="r12">
+        <div class="rule-head">
+          <h2 class="section-title">12. MULTIPLE CHARACTERS</h2>
+          <span class="pill">Consequences: Class B</span>
+        </div>
+        <p class="rule-desc">Having multiple characters (from the same player) in one gang or group is not allowed.</p>
+        <ul class="rules">
+          <li>In general, avoid creating multiple characters involved in the same story or scenarios who could use the same information to push their goals.</li>
+          <li>If your character gets CK'd in a faction and you want to stay in that faction, your new character must start as a <strong>resident and/or member</strong> and work back up to leader. This creates more roleplay, character development and backdooring opportunities for those who want leadership. Failing to do this can result in a faction strike or a ban.</li>
+          <li>Your new character <strong>cannot</strong> be related to your previous character. (This applies in character only.)</li>
+        </ul>
+      </div>
+
+      <div class="rule-group" id="r13">
+        <div class="rule-head">
+          <h2 class="section-title">13. CORRUPTION (IC)</h2>
+          <span class="pill">Consequences: Any Class Depending on the Situation</span>
+        </div>
+        <ul class="rules">
+          <li>Giving guns from the Police or Fire Department to others on the server is corruption and will be banned. No warnings.</li>
+          <li>Taking a large amount of money, weapons, items, etc. from someone and not reporting it to staff.</li>
+          <li>Setting another player up to be killed as a member of PD or FD is prohibited.</li>
+          <li>You may only work one government career at a time (Medical Services or Police Department, not both). This balances activity and queue priority across departments.</li>
+          <li>Applying for and getting a legal firearm license in order to distribute weapons and/or ammunition.</li>
+        </ul>
+      </div>
+
+      <div class="rule-group" id="r14">
+        <div class="rule-head">
+          <h2 class="section-title">14. REFUNDS</h2>
+          <span class="pill">Policy</span>
+        </div>
+        <p class="rule-desc">There is a strict <strong>NO refund</strong> policy on ANY donation made to the server. Donations keep the server running for the community. This includes whitelist applications, instant whitelist, and any asset granted in game (if the server includes or allows them).</p>
+      </div>
+
+      <div class="rule-group" id="r15">
+        <div class="rule-head">
+          <h2 class="section-title">15. REAL WORLD TRADING</h2>
+          <span class="pill">Consequences: Any Class Depending on the Situation</span>
+        </div>
+        <p class="rule-desc">Trading or buying in-game items for out-of-game currency is strongly prohibited. Example: giving someone a vehicle in game and receiving payment for it out of character.</p>
+      </div>
+
+      <div class="rule-group" id="r16">
+        <div class="rule-head">
+          <h2 class="section-title">16. VEHICLE PRICE AGREEMENT</h2>
+          <span class="pill">Consequences: Class B + Character Wipe</span>
+        </div>
+        <p class="rule-desc">When selling any vehicle on the server, you can add a maximum of <strong>$75,000</strong> to its original/stock price. Example: a Dodge Charger Hellcat with a sticker price of $200,000 can be sold for at most $275,000.</p>
+      </div>
+
+      <div class="rule-group" id="r17">
+        <div class="rule-head">
+          <h2 class="section-title">17. OBSCENE ROLEPLAY</h2>
+          <span class="pill">Consequences: Class D</span>
+        </div>
+        <p class="rule-desc">Obscene roleplay must happen away from other players and areas where players are likely to pass. Every party must agree to continue with out-of-character consent in local OOC chat. If anyone feels uncomfortable at any time, they can opt out and void the roleplay, which ends the scene for good.</p>
+        <p class="rule-desc">What counts as obscene roleplay:</p>
+        <ul class="rules">
+          <li>Erotic or sexual roleplay.</li>
+          <li>Torture-style roleplay.</li>
+          <li>Scenes involving gore.</li>
+        </ul>
+        <p class="rule-desc"><strong>Never</strong> roleplay the following, even if both parties agree:</p>
+        <ul class="rules danger">
+          <li>Rape or non-consensual touching.</li>
+          <li>Obscene roleplay of any kind with characters who are not of age.</li>
+        </ul>
+      </div>
+
+      <!-- ===== PUNISHMENTS ===== -->
+      <div class="divider-title" id="punishments">
+        <div class="lights" aria-hidden="true"></div>
+        <h2 class="title">PUNISHMENTS</h2>
+      </div>
+      <p class="intro small">These are only baselines. Every situation is different and will be handled based on the issues presented.</p>
+
+      <div class="class-grid">
+        <div class="class-card"><span class="dot green"></span><h3>Class A</h3><p>Verbal warning or admin jail</p></div>
+        <div class="class-card"><span class="dot yellow"></span><h3>Class B</h3><p>1 - 3 day ban</p></div>
+        <div class="class-card"><span class="dot blue"></span><h3>Class C</h3><p>7 - 21 day ban</p></div>
+        <div class="class-card"><span class="dot red"></span><h3>Class D</h3><p>Permanent ban (can appeal)</p></div>
+      </div>
+
+      <div class="rule-group">
+        <div class="rule-head">
+          <h2 class="section-title">STRIKE SYSTEM</h2>
+        </div>
+        <ul class="rules">
+          <li><strong>Strike 1:</strong> your first ban offense.</li>
+          <li><strong>Strike 2:</strong> your second ban offense.</li>
+          <li><strong>Strike 3:</strong> your last ban offense. Whitelist revoked; you can repurchase it after 30 days.</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <img src="assets/logo.png" alt="">
+    <p>&copy; <span id="year"></span> Stories of Los Santos. Not affiliated with Rockstar Games or Cfx.re.</p>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
